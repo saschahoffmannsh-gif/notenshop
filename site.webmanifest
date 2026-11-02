@@ -1,0 +1,31 @@
+{
+  "name": "Notenshop",
+  "short_name": "Notenshop",
+  "description": "Belohnungssystem für Eltern: Noten werden zu Punkten, Punkte zu Belohnungen – Eltern füllen den Shop, Kinder lösen ein.",
+  "start_url": "/notenshop/",
+  "scope": "/notenshop/",
+  "display": "standalone",
+  "background_color": "#f7f7fa",
+  "theme_color": "#6732d1",
+  "icons": [
+    {
+      "src": "/notenshop/brand/notenshop-icon-192-v1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/notenshop/brand/notenshop-icon-512-v1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/notenshop/brand/notenshop-maskable-512-v1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "/notenshop/"
+}
