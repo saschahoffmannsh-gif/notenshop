@@ -1,6 +1,7 @@
 // Notenshop Service Worker: App-Hülle offline verfügbar + Push-Benachrichtigungen.
 // Daten (API) werden NICHT hier gecacht – das macht die App selbst (zuletzt geladener Stand, als „offline“ markiert).
-const CACHE = "ns-shell-v8";
+// v9: Oberfläche rechnet und zeigt Noten je Schuljahr, ohne Halbjahr-Umschalter.
+const CACHE = "ns-shell-v9";
 const BASE = new URL("./", self.location).pathname;
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll([BASE, BASE + "index.html", BASE + "site.webmanifest", BASE + "brand/notenshop-icon-192-v1.png"]).catch(() => undefined)).then(() => self.skipWaiting()));
