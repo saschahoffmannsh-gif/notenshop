@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- Statischer Einstieg für GitHub Pages. Kopf-Angaben entsprechen app/layout.tsx (metadata/viewport). -->
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f7fa" />
+    <title>Notenshop – Belohnungssystem für Eltern: Noten, Punkte, Belohnungen</title>
+    <meta name="description" content="Das Belohnungssystem für Eltern: Gute Noten werden zu Punkten, Punkte zu Belohnungen. Eltern tragen Noten ein, füllen den Shop und bestimmen Preise und Regeln – nur mit dem Eltern-Konto. Kostenlos." />
+    <meta name="application-name" content="Notenshop" />
+    <link rel="manifest" href="/notenshop/site.webmanifest?v=notenshop-v4" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Notenshop" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" href="/notenshop/brand/notenshop-icon-32-v1.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/notenshop/brand/notenshop-icon-16-v1.png" sizes="16x16" type="image/png" />
+    <link rel="shortcut icon" href="/notenshop/brand/notenshop-v1.ico" />
+    <link rel="apple-touch-icon" href="/notenshop/brand/notenshop-icon-180-v1.png" sizes="180x180" type="image/png" />
+    <meta property="og:title" content="Notenshop – Belohnungssystem für Eltern" />
+    <meta property="og:description" content="Für Eltern: Noten werden zu Punkten, Punkte zu Belohnungen. Eltern füllen den Shop, Kinder lösen ein." />
+    <meta property="og:site_name" content="Notenshop" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://saschahoffmannsh-gif.github.io/notenshop/brand/notenshop-share-v1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Notenshop – Einkaufswagen mit Schulbuch, Doktorhut und fröhlichem Stern" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notenshop – Belohnungssystem für Eltern" />
+    <meta name="twitter:description" content="Für Eltern: Noten werden zu Punkten, Punkte zu Belohnungen. Eltern füllen den Shop, Kinder lösen ein." />
+    <meta name="twitter:image" content="https://saschahoffmannsh-gif.github.io/notenshop/brand/notenshop-share-v1.jpg" />
+    <script src="/notenshop/config.js?v=1794314398"></script>
+    <script type="module" crossorigin src="/notenshop/assets/index-D34aLyzO.js"></script>
+    <link rel="stylesheet" crossorigin href="/notenshop/assets/index-C-LW9Ict.css">
+  </head>
+  <body class="antialiased">
+    <noscript><p style="font-family:sans-serif;padding:20px">Notenshop – das Belohnungssystem für Eltern. Bitte JavaScript aktivieren. <a href="/notenshop/impressum/">Impressum</a> · <a href="/notenshop/datenschutz/">Datenschutz</a> · Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p></noscript>
+    <div id="splash" role="status" aria-live="polite" aria-label="Notenshop wird geladen">
+      <div class="sp-in">
+        <div class="sp-logo"><img src="/notenshop/brand/notenshop-icon-512-v1.png" alt="" width="148" height="148" /></div>
+        <h1 class="sp-name"><img src="/notenshop/assets/notenshop-wordmark-splash-C0-cr_jn.webp" alt="Notenshop" width="230" height="47" /></h1>
+        <p class="sp-hello">Willkommen</p>
+        <p class="sp-sub">Noten sammeln. Belohnungen einlösen.</p>
+      </div>
+      <div class="sp-foot"><div class="sp-bar" aria-hidden="true"><i></i></div><p class="sp-load">Wird geladen …</p></div>
+      <div class="sp-by" aria-label="von Spoo Studio"><span class="sp-by-l">von</span><span class="sp-by-logo"><picture><source srcset="/notenshop/assets/spoo-mark-x06SYNjw.webp" type="image/webp" /><img class="sp-by-mark" src="/notenshop/assets/spoo-mark-C4mUscmk.png" alt="" width="71" height="78" /></picture><picture><source srcset="/notenshop/assets/spoo-word-4hrCIEE7.webp" type="image/webp" /><img class="sp-by-word" src="/notenshop/assets/spoo-word-C_gYiLKT.png" alt="Spoo Studio" width="249" height="48" /></picture></span></div>
+    </div>
+    <script>
+      /* Ladebildschirm wie bei Pflegekreis: einmal pro App-Start, genau 2 s (App lädt dahinter), dann sanft überblenden. ?nosplash überspringt ihn. */
+      (function () {
+        var d = document.getElementById("splash");
+        if (/[?&]nosplash\b/.test(location.search) || /\/(impressum|datenschutz)\/?$/.test(location.pathname) || /[?&]seite=/.test(location.search)) { d.parentNode.removeChild(d); return; }
+        document.documentElement.classList.add("splashing");
+        window.NS_SPLASH = { t0: performance.now(), dur: 2000 };
+        setTimeout(function () {
+          d.classList.add("out"); document.documentElement.classList.remove("splashing");
+          setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 600);
+        }, window.NS_SPLASH.dur);
+      })();
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
